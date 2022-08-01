@@ -1,0 +1,853 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C352C3B228946C170020F6E1 /* Beer Counter WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C352C3B128946C170020F6E1 /* Beer Counter WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C352C3B728946C200020F6E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C352C3B628946C200020F6E1 /* Assets.xcassets */; };
+		C352C3BD28946C210020F6E1 /* Beer Counter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C352C3BC28946C210020F6E1 /* Beer Counter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C352C3C228946C210020F6E1 /* Beer_CounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C352C3C128946C210020F6E1 /* Beer_CounterApp.swift */; };
+		C352C3C428946C210020F6E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C352C3C328946C210020F6E1 /* ContentView.swift */; };
+		C352C3C628946C210020F6E1 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C352C3C528946C210020F6E1 /* NotificationController.swift */; };
+		C352C3C828946C210020F6E1 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C352C3C728946C210020F6E1 /* NotificationView.swift */; };
+		C352C3CA28946C210020F6E1 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C352C3C928946C210020F6E1 /* ComplicationController.swift */; };
+		C352C3CC28946C250020F6E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C352C3CB28946C250020F6E1 /* Assets.xcassets */; };
+		C352C3CF28946C250020F6E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C352C3CE28946C250020F6E1 /* Preview Assets.xcassets */; };
+		C352C3DB28946C260020F6E1 /* Beer_CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C352C3DA28946C260020F6E1 /* Beer_CounterTests.swift */; };
+		C352C3E528946C260020F6E1 /* Beer_CounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C352C3E428946C260020F6E1 /* Beer_CounterUITests.swift */; };
+		C352C3E728946C260020F6E1 /* Beer_CounterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C352C3E628946C260020F6E1 /* Beer_CounterUITestsLaunchTests.swift */; };
+		C3E43150289471C500478434 /* DrinkConsumed.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E4314F289471C500478434 /* DrinkConsumed.swift */; };
+		C3E431522894720E00478434 /* DrinkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E431512894720E00478434 /* DrinkList.swift */; };
+		C3E431562894795100478434 /* PickNewDrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E431552894795100478434 /* PickNewDrinkView.swift */; };
+		C3ED85642894922E00FB6240 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ED85632894922E00FB6240 /* DetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C352C3B328946C170020F6E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C352C3A728946C160020F6E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C352C3B028946C170020F6E1;
+			remoteInfo = "Beer Counter WatchKit App";
+		};
+		C352C3BE28946C210020F6E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C352C3A728946C160020F6E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C352C3BB28946C210020F6E1;
+			remoteInfo = "Beer Counter WatchKit Extension";
+		};
+		C352C3D728946C260020F6E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C352C3A728946C160020F6E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C352C3BB28946C210020F6E1;
+			remoteInfo = "Beer Counter WatchKit Extension";
+		};
+		C352C3E128946C260020F6E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C352C3A728946C160020F6E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C352C3B028946C170020F6E1;
+			remoteInfo = "Beer Counter WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C352C3ED28946C260020F6E1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C352C3BD28946C210020F6E1 /* Beer Counter WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C352C3F128946C260020F6E1 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C352C3B228946C170020F6E1 /* Beer Counter WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C352C3AD28946C160020F6E1 /* Beer Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beer Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C352C3B128946C170020F6E1 /* Beer Counter WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beer Counter WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C352C3B628946C200020F6E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C352C3BC28946C210020F6E1 /* Beer Counter WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Beer Counter WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C352C3C128946C210020F6E1 /* Beer_CounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer_CounterApp.swift; sourceTree = "<group>"; };
+		C352C3C328946C210020F6E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C352C3C528946C210020F6E1 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		C352C3C728946C210020F6E1 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		C352C3C928946C210020F6E1 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		C352C3CB28946C250020F6E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C352C3CE28946C250020F6E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C352C3D028946C250020F6E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C352C3D128946C250020F6E1 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C352C3D628946C260020F6E1 /* Beer CounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Beer CounterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C352C3DA28946C260020F6E1 /* Beer_CounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer_CounterTests.swift; sourceTree = "<group>"; };
+		C352C3E028946C260020F6E1 /* Beer CounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Beer CounterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C352C3E428946C260020F6E1 /* Beer_CounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer_CounterUITests.swift; sourceTree = "<group>"; };
+		C352C3E628946C260020F6E1 /* Beer_CounterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer_CounterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C3E4314F289471C500478434 /* DrinkConsumed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkConsumed.swift; sourceTree = "<group>"; };
+		C3E431512894720E00478434 /* DrinkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkList.swift; sourceTree = "<group>"; };
+		C3E431552894795100478434 /* PickNewDrinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickNewDrinkView.swift; sourceTree = "<group>"; };
+		C3ED85632894922E00FB6240 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C352C3B928946C210020F6E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C352C3D328946C260020F6E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C352C3DD28946C260020F6E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C352C3A628946C160020F6E1 = {
+			isa = PBXGroup;
+			children = (
+				C352C3B528946C170020F6E1 /* Beer Counter WatchKit App */,
+				C352C3C028946C210020F6E1 /* Beer Counter WatchKit Extension */,
+				C352C3D928946C260020F6E1 /* Beer CounterTests */,
+				C352C3E328946C260020F6E1 /* Beer CounterUITests */,
+				C352C3AE28946C160020F6E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C352C3AE28946C160020F6E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C352C3AD28946C160020F6E1 /* Beer Counter.app */,
+				C352C3B128946C170020F6E1 /* Beer Counter WatchKit App.app */,
+				C352C3BC28946C210020F6E1 /* Beer Counter WatchKit Extension.appex */,
+				C352C3D628946C260020F6E1 /* Beer CounterTests.xctest */,
+				C352C3E028946C260020F6E1 /* Beer CounterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C352C3B528946C170020F6E1 /* Beer Counter WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				C352C3B628946C200020F6E1 /* Assets.xcassets */,
+			);
+			path = "Beer Counter WatchKit App";
+			sourceTree = "<group>";
+		};
+		C352C3C028946C210020F6E1 /* Beer Counter WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C3E4314E2894719D00478434 /* Model */,
+				C352C3C128946C210020F6E1 /* Beer_CounterApp.swift */,
+				C352C3C328946C210020F6E1 /* ContentView.swift */,
+				C3ED85632894922E00FB6240 /* DetailView.swift */,
+				C3E431552894795100478434 /* PickNewDrinkView.swift */,
+				C352C3C528946C210020F6E1 /* NotificationController.swift */,
+				C352C3C728946C210020F6E1 /* NotificationView.swift */,
+				C352C3C928946C210020F6E1 /* ComplicationController.swift */,
+				C352C3CB28946C250020F6E1 /* Assets.xcassets */,
+				C352C3D028946C250020F6E1 /* Info.plist */,
+				C352C3D128946C250020F6E1 /* PushNotificationPayload.apns */,
+				C352C3CD28946C250020F6E1 /* Preview Content */,
+			);
+			path = "Beer Counter WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		C352C3CD28946C250020F6E1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C352C3CE28946C250020F6E1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C352C3D928946C260020F6E1 /* Beer CounterTests */ = {
+			isa = PBXGroup;
+			children = (
+				C352C3DA28946C260020F6E1 /* Beer_CounterTests.swift */,
+			);
+			path = "Beer CounterTests";
+			sourceTree = "<group>";
+		};
+		C352C3E328946C260020F6E1 /* Beer CounterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C352C3E428946C260020F6E1 /* Beer_CounterUITests.swift */,
+				C352C3E628946C260020F6E1 /* Beer_CounterUITestsLaunchTests.swift */,
+			);
+			path = "Beer CounterUITests";
+			sourceTree = "<group>";
+		};
+		C3E4314E2894719D00478434 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3E4314F289471C500478434 /* DrinkConsumed.swift */,
+				C3E431512894720E00478434 /* DrinkList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C352C3AC28946C160020F6E1 /* Beer Counter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C352C3F228946C260020F6E1 /* Build configuration list for PBXNativeTarget "Beer Counter" */;
+			buildPhases = (
+				C352C3AB28946C160020F6E1 /* Resources */,
+				C352C3F128946C260020F6E1 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C352C3B428946C170020F6E1 /* PBXTargetDependency */,
+			);
+			name = "Beer Counter";
+			productName = "Beer Counter";
+			productReference = C352C3AD28946C160020F6E1 /* Beer Counter.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		C352C3B028946C170020F6E1 /* Beer Counter WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C352C3EE28946C260020F6E1 /* Build configuration list for PBXNativeTarget "Beer Counter WatchKit App" */;
+			buildPhases = (
+				C352C3AF28946C170020F6E1 /* Resources */,
+				C352C3ED28946C260020F6E1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C352C3BF28946C210020F6E1 /* PBXTargetDependency */,
+			);
+			name = "Beer Counter WatchKit App";
+			productName = "Beer Counter WatchKit App";
+			productReference = C352C3B128946C170020F6E1 /* Beer Counter WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C352C3BB28946C210020F6E1 /* Beer Counter WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C352C3EA28946C260020F6E1 /* Build configuration list for PBXNativeTarget "Beer Counter WatchKit Extension" */;
+			buildPhases = (
+				C352C3B828946C210020F6E1 /* Sources */,
+				C352C3B928946C210020F6E1 /* Frameworks */,
+				C352C3BA28946C210020F6E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Beer Counter WatchKit Extension";
+			productName = "Beer Counter WatchKit Extension";
+			productReference = C352C3BC28946C210020F6E1 /* Beer Counter WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		C352C3D528946C260020F6E1 /* Beer CounterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C352C3F528946C260020F6E1 /* Build configuration list for PBXNativeTarget "Beer CounterTests" */;
+			buildPhases = (
+				C352C3D228946C260020F6E1 /* Sources */,
+				C352C3D328946C260020F6E1 /* Frameworks */,
+				C352C3D428946C260020F6E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C352C3D828946C260020F6E1 /* PBXTargetDependency */,
+			);
+			name = "Beer CounterTests";
+			productName = "Beer CounterTests";
+			productReference = C352C3D628946C260020F6E1 /* Beer CounterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C352C3DF28946C260020F6E1 /* Beer CounterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C352C3F828946C260020F6E1 /* Build configuration list for PBXNativeTarget "Beer CounterUITests" */;
+			buildPhases = (
+				C352C3DC28946C260020F6E1 /* Sources */,
+				C352C3DD28946C260020F6E1 /* Frameworks */,
+				C352C3DE28946C260020F6E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C352C3E228946C260020F6E1 /* PBXTargetDependency */,
+			);
+			name = "Beer CounterUITests";
+			productName = "Beer CounterUITests";
+			productReference = C352C3E028946C260020F6E1 /* Beer CounterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C352C3A728946C160020F6E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					C352C3AC28946C160020F6E1 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					C352C3B028946C170020F6E1 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					C352C3BB28946C210020F6E1 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					C352C3D528946C260020F6E1 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = C352C3BB28946C210020F6E1;
+					};
+					C352C3DF28946C260020F6E1 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = C352C3B028946C170020F6E1;
+					};
+				};
+			};
+			buildConfigurationList = C352C3AA28946C160020F6E1 /* Build configuration list for PBXProject "Beer Counter" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C352C3A628946C160020F6E1;
+			productRefGroup = C352C3AE28946C160020F6E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C352C3AC28946C160020F6E1 /* Beer Counter */,
+				C352C3B028946C170020F6E1 /* Beer Counter WatchKit App */,
+				C352C3BB28946C210020F6E1 /* Beer Counter WatchKit Extension */,
+				C352C3D528946C260020F6E1 /* Beer CounterTests */,
+				C352C3DF28946C260020F6E1 /* Beer CounterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C352C3AB28946C160020F6E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C352C3AF28946C170020F6E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C352C3B728946C200020F6E1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C352C3BA28946C210020F6E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C352C3CF28946C250020F6E1 /* Preview Assets.xcassets in Resources */,
+				C352C3CC28946C250020F6E1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C352C3D428946C260020F6E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C352C3DE28946C260020F6E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C352C3B828946C210020F6E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C352C3C628946C210020F6E1 /* NotificationController.swift in Sources */,
+				C3ED85642894922E00FB6240 /* DetailView.swift in Sources */,
+				C352C3C428946C210020F6E1 /* ContentView.swift in Sources */,
+				C352C3CA28946C210020F6E1 /* ComplicationController.swift in Sources */,
+				C352C3C228946C210020F6E1 /* Beer_CounterApp.swift in Sources */,
+				C3E43150289471C500478434 /* DrinkConsumed.swift in Sources */,
+				C3E431562894795100478434 /* PickNewDrinkView.swift in Sources */,
+				C3E431522894720E00478434 /* DrinkList.swift in Sources */,
+				C352C3C828946C210020F6E1 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C352C3D228946C260020F6E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C352C3DB28946C260020F6E1 /* Beer_CounterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C352C3DC28946C260020F6E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C352C3E528946C260020F6E1 /* Beer_CounterUITests.swift in Sources */,
+				C352C3E728946C260020F6E1 /* Beer_CounterUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C352C3B428946C170020F6E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C352C3B028946C170020F6E1 /* Beer Counter WatchKit App */;
+			targetProxy = C352C3B328946C170020F6E1 /* PBXContainerItemProxy */;
+		};
+		C352C3BF28946C210020F6E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C352C3BB28946C210020F6E1 /* Beer Counter WatchKit Extension */;
+			targetProxy = C352C3BE28946C210020F6E1 /* PBXContainerItemProxy */;
+		};
+		C352C3D828946C260020F6E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C352C3BB28946C210020F6E1 /* Beer Counter WatchKit Extension */;
+			targetProxy = C352C3D728946C260020F6E1 /* PBXContainerItemProxy */;
+		};
+		C352C3E228946C260020F6E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C352C3B028946C170020F6E1 /* Beer Counter WatchKit App */;
+			targetProxy = C352C3E128946C260020F6E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C352C3E828946C260020F6E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C352C3E928946C260020F6E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C352C3EB28946C260020F6E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Beer Counter WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = F7XRTMXQP3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Beer Counter WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Beer Counter WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.Jan-Janovec.Beer-Counter.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		C352C3EC28946C260020F6E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Beer Counter WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = F7XRTMXQP3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Beer Counter WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Beer Counter WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.Jan-Janovec.Beer-Counter.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		C352C3EF28946C260020F6E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7XRTMXQP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Beer_Counter_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Beer Counter WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.Jan-Janovec.Beer-Counter.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		C352C3F028946C260020F6E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7XRTMXQP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Beer_Counter_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Beer Counter WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.Jan-Janovec.Beer-Counter.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		C352C3F328946C260020F6E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7XRTMXQP3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.Jan-Janovec.Beer-Counter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C352C3F428946C260020F6E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7XRTMXQP3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.Jan-Janovec.Beer-Counter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C352C3F628946C260020F6E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7XRTMXQP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.Jan-Janovec.Beer-CounterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beer Counter WatchKit Extension.appex/Beer Counter WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		C352C3F728946C260020F6E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7XRTMXQP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.Jan-Janovec.Beer-CounterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beer Counter WatchKit Extension.appex/Beer Counter WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		C352C3F928946C260020F6E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7XRTMXQP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.Jan-Janovec.Beer-CounterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Beer Counter WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		C352C3FA28946C260020F6E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7XRTMXQP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.Jan-Janovec.Beer-CounterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Beer Counter WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C352C3AA28946C160020F6E1 /* Build configuration list for PBXProject "Beer Counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C352C3E828946C260020F6E1 /* Debug */,
+				C352C3E928946C260020F6E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C352C3EA28946C260020F6E1 /* Build configuration list for PBXNativeTarget "Beer Counter WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C352C3EB28946C260020F6E1 /* Debug */,
+				C352C3EC28946C260020F6E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C352C3EE28946C260020F6E1 /* Build configuration list for PBXNativeTarget "Beer Counter WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C352C3EF28946C260020F6E1 /* Debug */,
+				C352C3F028946C260020F6E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C352C3F228946C260020F6E1 /* Build configuration list for PBXNativeTarget "Beer Counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C352C3F328946C260020F6E1 /* Debug */,
+				C352C3F428946C260020F6E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C352C3F528946C260020F6E1 /* Build configuration list for PBXNativeTarget "Beer CounterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C352C3F628946C260020F6E1 /* Debug */,
+				C352C3F728946C260020F6E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C352C3F828946C260020F6E1 /* Build configuration list for PBXNativeTarget "Beer CounterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C352C3F928946C260020F6E1 /* Debug */,
+				C352C3FA28946C260020F6E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C352C3A728946C160020F6E1 /* Project object */;
+}
