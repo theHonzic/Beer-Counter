@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct PickNewDrinkView: View {
+    
     @Binding var drinksList: [DrinkConsumed]
     @Binding var sheetPresented: Bool
-    
     @Binding var offList: [Drink]
     
     var body: some View {
-        
         List{
             ForEach(offList, id: \.self) { drink in
                 if drink.selected == false {
@@ -31,19 +30,16 @@ struct PickNewDrinkView: View {
     }
     
     private func addDrink(drink: Drink){
-        
-        
         let item = DrinkConsumed(id: UUID(), count: 1, name: drink.name)
         drinksList.append(item)
         
-        for var item in offList {
-            if item.name == drink.name {
-                item.selected = true
+        for var i in offList {
+            if i.name == drink.name {
+                i.selected = true
             }
         }
         
         do {
-            
             let data = try JSONEncoder().encode(drinksList)
             let url = getDocumentDocumentary().appendingPathComponent("drinksList")
             try data.write(to: url)

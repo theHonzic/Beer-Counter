@@ -9,11 +9,10 @@ import SwiftUI
 import Foundation
 
 class Drink: Hashable{
+    
     static func == (lhs: Drink, rhs: Drink) -> Bool {
         return ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
     }
-    
-    
     
     var name: String
     var selected: Bool
@@ -25,6 +24,7 @@ class Drink: Hashable{
         self.selected = selected
         self.image = image
     }
+    
     init(name: String, selected: Bool, emoji: String){
         self.name = name
         self.selected = selected
@@ -34,6 +34,7 @@ class Drink: Hashable{
     func hash(into hasher: inout Hasher) {
         hasher.combine(name)
     }
+    
 }
 
 class Drinks{

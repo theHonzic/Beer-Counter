@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     @State private var list: [DrinkConsumed] = [DrinkConsumed]()
     @State private var isNewDrinkSheetPresented: Bool = false
     @State private var showingAlert = false
-
     @State private var offeredList = Drinks().drinkList
+    
     var body: some View {
         
         VStack(alignment:.center, spacing: 9){
+            //No drinks
             if list.isEmpty {
                 Button(action: {
                     isNewDrinkSheetPresented = true
@@ -28,23 +30,26 @@ struct ContentView: View {
                 .sheet(isPresented: $isNewDrinkSheetPresented){
                     PickNewDrinkView(drinksList: $list, sheetPresented: $isNewDrinkSheetPresented, offList: $offeredList)
                 }
-                
                 Text("No drinks yet.")
+            //Drinks
             }else{
                 List {
                     ForEach(0..<list.count, id: \.self){ i in
-                        NavigationLink(destination: DetailView(drink: $list[i], index: i, list: $list)){
-                            HStack{
-                                Text("\(findEmojiToDrink(drink: list[i].name)) \(list[i].name)")
-                                Spacer()
-                                Text(String(list[i].count))
+                        if list[i].count > 0 {
+                            NavigationLink(destination: DetailView(drink: $list[i], list: $list, offList: $offeredList)){
+                                HStack{
+                                    Text("\(findEmojiToDrink(drink: list[i].name)) \(list[i].name)")
+                                    Spacer()
+                                    Text(String(list[i].count))
+                                }
                             }
+                            .buttonStyle(PlainButtonStyle())
                         }
-                        .buttonStyle(PlainButtonStyle())
                     }
-                    
                 }
+                //Buttons
                 HStack{
+                    //Add drink button
                     Button(action: {
                         isNewDrinkSheetPresented = true
                     }){
@@ -54,18 +59,19 @@ struct ContentView: View {
                     .sheet(isPresented: $isNewDrinkSheetPresented){
                         PickNewDrinkView(drinksList: $list, sheetPresented: $isNewDrinkSheetPresented, offList: $offeredList)
                     }
+                    //Reset drinks
                     Button(action: {
                         showingAlert = true
                     }){
                         Image(systemName: "arrow.counterclockwise.circle")
                     }
                     .alert("Reset counting?", isPresented: $showingAlert){
+                        //Confirm reset
                         Button(action:{
                             list.removeAll()
-                            
+                            showingAlert = false
                             
                             do {
-                                
                                 let data = try JSONEncoder().encode(list)
                                 let url = getDocumentDocumentary().appendingPathComponent("drinksList")
                                 try data.write(to: url)
@@ -80,7 +86,7 @@ struct ContentView: View {
                             Text("Yes")
                         }
                         .buttonStyle(BorderedButtonStyle(tint: .red))
-
+                        //Cancel reset
                         Button(action: {
                             showingAlert = false
                         }){
@@ -95,12 +101,8 @@ struct ContentView: View {
         }
         .navigationTitle("Beer counter")
         .onAppear(perform: {load()})
-        
-        
     }
-    
-    
-    
+    //Load data
     private func load(){
         DispatchQueue.main.async {
             do {
@@ -132,11 +134,5 @@ struct ContentView: View {
             }
         }
         return item
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
